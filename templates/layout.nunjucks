@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="itemscope" itemtype="https://schema.org/WebPage" lang="en" xml:lang="en">
+  <head>
+    <!-- Start of Information taken in from system meta-data -->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <!-- Meta tag to scale website content appropriately for the device -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Alumni Relations | George Fox University</title>
+    <meta content="Alumni Relations helps keep former students and graduates of George Fox University connected and involved with the university and current students." name="description"/>
+    
+    <meta content="Alumni Relations | George Fox University" itemprop="name"/> 
+    <meta content="unsafe-url" name="referrer"/>
+    
+    <link href="https://www.georgefox.edu/alumni/index.html" rel="canonical"/>
+    <!-- End of Information taken in from system metadata -->
+    
+    <!-- Start of resource links -->
+    
+    <!-- Code used to block page load until the website optimizer loads -->
+    
+    
+    <!-- Core JS Libraries -->
+    <script src="https://www.georgefox.edu/template/global/js/jquery-core/jquery-1.10.2.min.js.pagespeed.jm.ZzSiN_5Whq.js" type="text/JavaScript"></script>
+    <!-- End of Core JS Libraries -->
+    
+    <!-- Start of Bootstrap files -->
+    <link href="https://www.georgefox.edu/template/bootstrap/css/A.bootstrap.css.pagespeed.cf.y6RLaNcZte.css" media="screen" rel="stylesheet"/>
+    <script src="https://www.georgefox.edu/template/bootstrap/js/bootstrap.min.js.pagespeed.jm.D3-apKn9wk.js" type="text/javascript"></script>
+    <link href="https://www.georgefox.edu/template/A.bootstrap,,_css,,_bootstrap.min.css+font-awesome,,_css,,_font-awesome.min.css,Mcc.cJbLWe6cEc.css.pagespeed.cf.PG9PMLcbhS.css" rel="stylesheet"/>
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/template/font-awesome/css/font-awesome-ie7.min.css" />
+    <![endif]-->
+    <!-- End of Bootstrap files -->
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+      
+    <!-- Start of apple-touch-icon -->
+    <link href="https://www.georgefox.edu/template/global/images/logos/xapple-touch-icon-144x144-precomposed.png.pagespeed.ic.24bftQPzyY.webp" rel="apple-touch-icon" sizes="144x144"/>
+    <link href="https://www.georgefox.edu/template/global/images/logos/xapple-touch-icon-114x114-precomposed.png.pagespeed.ic.f1ip3fj8_3.webp" rel="apple-touch-icon" sizes="114x114"/>
+    <link href="https://www.georgefox.edu/template/global/images/xapple-touch-icon-72x72-precomposed.png.pagespeed.ic.oeXYXx9F0g.webp" rel="apple-touch-icon" sizes="72x72"/>
+    <link href="https://www.georgefox.edu/template/global/images/xapple-touch-icon-precomposed.png.pagespeed.ic.8CwlmJnPYt.webp" rel="apple-touch-icon"/>                    
+    <!-- End of apple-touch-icon -->         
+      
+            
+    <!-- Start of template css -->
+    <link href="https://www.georgefox.edu/template/global/css/2013-redesign/A.TradeGothic-SSL.css+main.css,Mcc.WXa7JolTNT.css.pagespeed.cf.grbT8SO46d.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- End of template css -->
+    
+    <!-- Start of print css -->
+    <link href="https://www.georgefox.edu/template/global/css/2013-redesign/A.print.css.pagespeed.cf.IuuKWjQo3f.css" media="print" rel="stylesheet" type="text/css"/>
+    <!-- End of print css -->
+    
+    <!-- Start of inline css -->
+    <link href="https://www.georgefox.edu/template/interior/misc/alumni/alumni-style.css" rel="stylesheet" type="text/css"/>
+    <!-- End of inline css -->
+    
+    <!-- Alex added CSS -->
+    <link href="css/georgefoxalumni.css" rel="stylesheet" type="text/css"/>
+    <!-- End Alex CSS -->
+    
+    <!-- Start of template javascript -->
+    <script src="https://www.georgefox.edu/template/global/js/main.js" type="text/javascript"></script>
+    <!-- End of template javascript -->
+    
+    <!-- JS Plugins -->
+    <script src="https://www.georgefox.edu/template/global/js/jquery-plugins/jquery.hoverIntent.minified.js" type="text/JavaScript"></script>
+    <script src="https://www.georgefox.edu/template/global/js/jquery-plugins/jquery.cookie.js" type="text/JavaScript"></script>
+            
+    <!-- End of JS Plugins -->
+    
+    <!-- Start of inline javascript -->
+    <script src="https://www.georgefox.edu/template/global/js/jquery.cycle.all.min.js" type="text/javascript"></script>
+    <script src="https://www.georgefox.edu/template/global/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://www.georgefox.edu/template/interior/misc/alumni/alumni-home-slideshow.js" type="text/javascript"></script>
+
+</head>
+
+<body class="alumni">
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WR94MR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WR94MR');</script>
+  
+  {% include "partials/header.nunjucks" %}
+  
+  {% include "partials/subheader.nunjucks" %}
+  
+  <!-- Start of main -->
+  <div id="main">
+    <div class="full-width-banner"></div>
+    <div class="container clearfix containerDefault">
+      <div class="banner"><span></span></div>
+      
+      <!-- Start of mainContent -->
+      <div id="mainContent">
+        {% block site_content %}{% endblock %}
+      </div>
+      <!-- End of mainContent -->
+      
+    </div>
+    <div class="full-width-banner"></div>
+  </div>
+  <!-- End of main -->
+
+  {% include "partials/footer.nunjucks" %}
+
+</body>
