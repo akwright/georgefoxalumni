@@ -3,10 +3,12 @@ body.alumni .subheader {
   
   background: $c_fog;
   box-shadow: none;
-}
-  body.alumni .subheader .container {
+    
+  .container {
     margin-bottom: 0;
   }
+}
+    
     body.alumni .sectionTitle {
       padding-left: 0;
       position: relative;
