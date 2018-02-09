@@ -87,21 +87,18 @@
   
   <!-- Start of main -->
   <div id="main">
-    <div class="full-width-banner"></div>
-    <div class="container clearfix containerDefault">
-      <div class="banner"><span></span></div>
+    <div class="containerDefault">
       
       <!-- Start of mainContent -->
-      <div id="mainContent">
-        {% block site_content %}{% endblock %}
-      </div>
+      {% block site_content %}{% endblock %}
       <!-- End of mainContent -->
       
     </div>
-    <div class="full-width-banner"></div>
   </div>
   <!-- End of main -->
 
   {% include "partials/footer.nunjucks" %}
+  
+  <script src="js/index.min.js">
 
 </body>
