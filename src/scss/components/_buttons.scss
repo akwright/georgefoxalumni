@@ -1,0 +1,21 @@
+.btn {
+  &-gold {
+    background: $c_gold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    
+    transition: ease-in 0.09s;
+    
+    &:hover {
+      background: lighten($c_gold, 5%);
+      color: #fff;
+    }
+  }
+  &-wide {
+    padding: .5rem 3.5rem;
+    
+    font-size: 21px;
+  }
+}
