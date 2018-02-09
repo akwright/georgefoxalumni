@@ -1,0 +1,23 @@
+h1, h2, h3, h4 {
+  color: $c_black;
+}
+
+h1 {
+  font-size: $fontsize_h1;
+  line-height: $lineheight_h1;
+}
+
+h2 {
+  font-size: $fontsize_h2;
+  line-height: $lineheight_h2;
+}
+
+h3 {
+  font-size: $fontsize_h3;
+  line-height: $lineheight_h3;
+}
+
+h4 {
+  font-size: $fontsize_h4;
+  line-height: $lineheight_h4;
+}
