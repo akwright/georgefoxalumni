@@ -2,4 +2,7 @@ body.alumni {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+  
+  font-size: $fontsize_body;
+  line-height: $lineheight_body;
 }

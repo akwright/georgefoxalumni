@@ -1,0 +1,29 @@
+ul {
+  &.no-style {
+    list-style: none;
+  }
+  
+  &.cap-style {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    
+    li {
+      list-style: none;
+      margin-bottom: 1rem;
+      
+      &:before {
+        content: '';
+        position: relative;
+        top: 5px;
+        
+        display: inline-block;
+        width: 22px;
+        height: 17px;
+        margin-right: 10px;
+        
+        background: url('../images/icons/cap-list-icon@2x.png') no-repeat;
+        background-size: 20px 15px;
+      }
+    }
+  }
+}

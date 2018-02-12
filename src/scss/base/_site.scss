@@ -2,3 +2,17 @@
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+
+.alumni-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  
+  > h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.bg {
+  &-gray { background: $c_fog; }
+  &-blue { background: $c_blue; }
+}
