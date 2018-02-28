@@ -1,0 +1,26 @@
+.social-list {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  li {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+  }
+  
+  a {
+    display: block;
+    transition: transform .2s ease;
+    
+    &:hover,
+    &:focus { transform: translateY(-2px); }
+    &:active { transform: translateY(1px); transition: transform .05s ease; }
+  }
+}
