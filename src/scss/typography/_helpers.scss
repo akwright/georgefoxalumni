@@ -1,3 +1,18 @@
 .text-white * {
   color: #fff;
 }
+
+.constrained {
+  max-width: 40ch;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+  li {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.neg-margin-top {
+  margin-top: -150px;
+}
