@@ -12,10 +12,6 @@ const source = require('vinyl-source-stream');
 const fs = require('fs');
 
 const paths = {
-  js: {
-    src: './src/js/',
-    dest: './public/js/'
-  },
   css: {
     src: './src/scss/',
     dest: './public/css/'
@@ -31,7 +27,7 @@ const paths = {
 /* Development
 /* ----------------- */
 
-gulp.task('development', ['scripts', 'templates', 'styles'], () => {
+gulp.task('development', ['templates', 'styles'], () => {
   browserSync({
     server: {
       baseDir: './public/'
@@ -48,39 +44,8 @@ gulp.task('development', ['scripts', 'templates', 'styles'], () => {
   });
 
   gulp.watch(paths.css.src + '**/*.scss', ['styles']);
-  gulp.watch(paths.js.src + '**/*.js', ['scripts']);
   gulp.watch('./pages/**/*.html', ['templates']);
 });
-
-
-/* ----------------- */
-/* Scripts
-/* ----------------- */
-
-gulp.task('scripts', () => {
-  return browserify({
-    'entries': [paths.js.src + 'index.js'],
-    'debug': true
-  })
-  .bundle()
-  .on('error', function () {
-    var args = Array.prototype.slice.call(arguments);
-
-    plugins().notify.onError({
-      'title': 'Compile Error',
-      'message': '<%= error.message %>'
-    }).apply(this, args);
-
-    this.emit('end');
-  })
-  .pipe(source('index.min.js'))
-  .pipe(buffer())
-  .pipe(plugins().sourcemaps.init({'loadMaps': true}))
-  .pipe(plugins().sourcemaps.write('.'))
-  .pipe(gulp.dest(paths.js.dest))
-  .pipe(browserSync.stream());
-});
-
 
 
 /* ----------------- */
@@ -131,30 +96,6 @@ gulp.task('cssmin', () => {
 });
 
 
-/* ----------------- */
-/* Jsmin
-/* ----------------- */
-
-gulp.task('jsmin', () => {
-  var envs = plugins().env.set({
-    'NODE_ENV': 'production'
-  });
-
-  return browserify({
-    'entries': [paths.js.src + 'index.js'],
-    'debug': false
-  })
-  .bundle()
-  .pipe(source('index.min.js'))
-  .pipe(envs)
-  .pipe(buffer())
-  .pipe(plugins().uglify().on('error', plugins().util.log))
-  .pipe(envs.reset)
-  .pipe(gulp.dest(paths.js.dest));
-});
-
-
-
 // Generate & Inline Critical-path CSS
 gulp.task('critical', function () {
   return gulp.src('public/*.html')
@@ -168,5 +109,5 @@ gulp.task('critical', function () {
 /* ----------------- */
 
 gulp.task('default', ['development']);
-gulp.task('deploy', ['cssmin', 'jsmin']);
+gulp.task('deploy', ['cssmin']);
 gulp.task('crit', ['critical']);
