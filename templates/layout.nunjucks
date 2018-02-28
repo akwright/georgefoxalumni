@@ -96,6 +96,8 @@
     </div>
   </div>
   <!-- End of main -->
+  
+  {% include "partials/social.nunjucks" %}
 
   {% include "partials/footer.nunjucks" %}
   
