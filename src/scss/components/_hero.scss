@@ -1,0 +1,17 @@
+.hero {
+  position: relative;
+  
+  &-image {
+    position: absolute;
+    top: -50%;
+    left: 0;
+  }
+  
+  &-logo {
+    position: absolute;
+    top: calc(50% - (206px / 2) );
+    left: calc(50% - (242px / 2) );
+    
+    max-width: 242px;
+  }
+}
