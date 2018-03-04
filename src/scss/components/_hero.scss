@@ -1,10 +1,29 @@
 .hero {
+  display: flex;
+  flex-flow: row wrap;
+  
   position: relative;
+  height: 400px;
+  overflow: hidden;
+  
+  @media (min-height: 900px) and (min-width: 1600px) {
+    height: 600px;
+  }
   
   &-image {
     position: absolute;
     top: -50%;
     left: 0;
+    width: 100vw;
+  }
+  
+  &-content {
+    position: relative;
+    max-width: 60ch;
+    
+    &.align-left {
+      align-self: flex-start;
+    }
   }
   
   &-logo {
