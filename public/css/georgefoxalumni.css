@@ -20,6 +20,10 @@ h3 {
   font-size: 28px;
   line-height: 1.1; }
 
+img + h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem; }
+
 h4 {
   font-size: 20px;
   line-height: 1.4; }
@@ -162,6 +166,12 @@ ul.cap-style {
     top: calc(50% - (206px / 2));
     left: calc(50% - (242px / 2));
     max-width: 242px; }
+
+.info-content {
+  max-width: 90%; }
+  .text-center .info-content {
+    margin-left: auto;
+    margin-right: auto; }
 
 .parallax-container {
   position: relative; }

@@ -17,6 +17,11 @@ h3 {
   line-height: $lineheight_h3;
 }
 
+img + h3 {
+  margin-top: $sp_base * .6;
+  margin-bottom: $sp_base * .4;
+}
+
 h4 {
   font-size: $fontsize_h4;
   line-height: $lineheight_h4;
