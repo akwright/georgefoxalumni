@@ -1,3 +1,10 @@
+.info-block {
+  margin-bottom: $sp_base * 1.5;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
 .info-content {
   max-width: 90%;
   

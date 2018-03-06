@@ -169,6 +169,12 @@ ul.cap-style {
     left: calc(50% - (242px / 2));
     max-width: 242px; }
 
+.info-block {
+  margin-bottom: 3.75rem; }
+  @media (min-width: 768px) {
+    .info-block {
+      margin-bottom: 0; } }
+
 .info-content {
   max-width: 90%; }
   .text-center .info-content {
