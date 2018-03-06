@@ -149,6 +149,33 @@ ul.cap-style {
 .social-icon {
   max-width: 52px; }
 
+.block {
+  display: flex; }
+  .block.photo-left {
+    flex-direction: row; }
+  .block.photo-right {
+    flex-direction: row-reverse; }
+  .block-photo, .block-content {
+    flex: 1 0 100%; }
+    @media (min-width: 768px) {
+      .block-photo, .block-content {
+        flex: 1 0 50%; } }
+  .block-photo {
+    display: flex;
+    flex-direction: column; }
+    .block-photo img {
+      display: block;
+      object-fit: cover; }
+  .block-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+    .block-content p {
+      max-width: 48ch;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+
 .callout {
   position: relative;
   padding-top: 2.5rem;

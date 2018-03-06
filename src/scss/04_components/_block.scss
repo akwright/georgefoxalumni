@@ -1,0 +1,38 @@
+.block {
+  display: flex;
+  
+  &.photo-left { flex-direction: row; }
+  &.photo-right { flex-direction: row-reverse; }
+  
+  &-photo,
+  &-content {
+    flex: 1 0 100%;
+    
+    @media (min-width: 768px) {
+      flex: 1 0 50%;
+    }
+  }
+  
+  &-photo {
+    display: flex;
+    flex-direction: column;
+    
+    img {
+      display: block;
+      object-fit: cover;
+    }
+  }
+  
+  &-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+      max-width: 48ch;
+      margin-top: $sp_base * .4;
+      margin-bottom: $sp_base * .8;
+    }
+  }
+}
