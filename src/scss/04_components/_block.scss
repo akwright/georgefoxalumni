@@ -1,5 +1,6 @@
 .block {
   display: flex;
+  flex-wrap: wrap;
   
   &.photo-left { flex-direction: row; }
   &.photo-right { flex-direction: row-reverse; }
@@ -8,7 +9,7 @@
   &-content {
     flex: 1 0 100%;
     
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       flex: 1 0 50%;
     }
   }
@@ -28,6 +29,14 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    
+    padding-top: $sp_base * 2;
+    padding-bottom: $sp_base * 2;
+    
+    @media (min-width: 840px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     
     p {
       max-width: 48ch;

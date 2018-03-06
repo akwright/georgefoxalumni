@@ -150,14 +150,15 @@ ul.cap-style {
   max-width: 52px; }
 
 .block {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   .block.photo-left {
     flex-direction: row; }
   .block.photo-right {
     flex-direction: row-reverse; }
   .block-photo, .block-content {
     flex: 1 0 100%; }
-    @media (min-width: 768px) {
+    @media (min-width: 840px) {
       .block-photo, .block-content {
         flex: 1 0 50%; } }
   .block-photo {
@@ -170,7 +171,13 @@ ul.cap-style {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    @media (min-width: 840px) {
+      .block-content {
+        padding-top: 0;
+        padding-bottom: 0; } }
     .block-content p {
       max-width: 48ch;
       margin-top: 1rem;
