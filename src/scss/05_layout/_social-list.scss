@@ -1,5 +1,5 @@
 .social-list {
-  margin: 1rem 0;
+  margin: $sp_base * .4 0;
   padding: 0;
   list-style: none;
   
@@ -8,8 +8,8 @@
   justify-content: center;
   
   li {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: $sp_base * .6;
+    margin-right: $sp_base * .6;
     
     &:first-child { margin-left: 0; }
     &:last-child { margin-right: 0; }

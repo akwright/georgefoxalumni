@@ -5,22 +5,6 @@ body.alumni {
   font-size: 15px;
   line-height: 1.6; }
 
-.padding-vertical {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem; }
-
-.alumni-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
-  .alumni-section > h2 {
-    margin-bottom: 2rem; }
-
-.bg-gray {
-  background: #e7e7e7; }
-
-.bg-blue {
-  background: #18314b; }
-
 h1, h2, h3, h4 {
   color: #1a1a1a; }
 
@@ -54,6 +38,10 @@ h4 {
 .neg-margin-top {
   margin-top: -150px; }
 
+.padding-vertical {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+
 .btn-gold {
   background: #c9a017;
   color: #fff;
@@ -66,8 +54,68 @@ h4 {
     color: #fff; }
 
 .btn-wide {
-  padding: .5rem 2.5rem;
-  font-size: 21px; }
+  padding: 0.5rem 2.5rem;
+  font-size: 20px; }
+
+.journal-image {
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+ul.no-style {
+  list-style: none; }
+
+ul.cap-style {
+  margin-top: 2rem;
+  margin-bottom: 3rem; }
+  ul.cap-style li {
+    list-style: none;
+    margin-bottom: 1rem; }
+    ul.cap-style li:before {
+      content: '';
+      position: relative;
+      top: 5px;
+      display: inline-block;
+      width: 22px;
+      height: 17px;
+      margin-right: 10px;
+      background: url("../images/icons/cap-list-icon@2x.png") no-repeat;
+      background-size: 20px 15px; }
+
+.has-shadow {
+  position: relative;
+  transform-style: preserve-3d; }
+  .has-shadow::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 10%;
+    width: 80%;
+    height: 40%;
+    background: #1a1a1a;
+    filter: blur(40px);
+    background-blend-mode: multiply;
+    z-index: -1; }
+
+.social-icon {
+  max-width: 52px; }
+
+.callout {
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+  @media (min-width: 800px) {
+    .callout {
+      padding-top: 5rem;
+      padding-bottom: 5rem; } }
+  .callout h3 {
+    display: block;
+    max-width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e7e7e7;
+    line-height: 1.2; }
 
 .hero {
   display: flex;
@@ -115,52 +163,20 @@ h4 {
     left: calc(50% - (242px / 2));
     max-width: 242px; }
 
-.journal-image {
-  max-width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-ul.no-style {
-  list-style: none; }
-
-ul.cap-style {
-  margin-top: 2rem;
-  margin-bottom: 3rem; }
-  ul.cap-style li {
-    list-style: none;
-    margin-bottom: 1rem; }
-    ul.cap-style li:before {
-      content: '';
-      position: relative;
-      top: 5px;
-      display: inline-block;
-      width: 22px;
-      height: 17px;
-      margin-right: 10px;
-      background: url("../images/icons/cap-list-icon@2x.png") no-repeat;
-      background-size: 20px 15px; }
-
 .parallax-container {
   position: relative; }
 
-.has-shadow {
-  position: relative;
-  transform-style: preserve-3d; }
-  .has-shadow::after {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    left: 10%;
-    width: 80%;
-    height: 40%;
-    background: #1a1a1a;
-    filter: blur(40px);
-    background-blend-mode: multiply;
-    z-index: -1; }
+.alumni-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  .alumni-section > h2 {
+    margin-bottom: 2rem; }
 
-.social-icon {
-  max-width: 52px; }
+.bg-gray {
+  background: #e7e7e7; }
+
+.bg-blue {
+  background: #18314b; }
 
 .video-container {
   position: relative;

@@ -4,12 +4,12 @@
 
 .constrained {
   max-width: 40ch;
-  margin-top: 2rem;
+  margin-top: $sp_base * .8;
   margin-left: auto;
   margin-right: auto;
   
   li {
-    margin-bottom: 1.25rem;
+    margin-bottom: $sp_base * .5;
   }
 }
 

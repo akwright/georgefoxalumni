@@ -1,0 +1,13 @@
+.alumni-section {
+  padding-top: $sp_base * 1.6;
+  padding-bottom: $sp_base * 1.6;
+  
+  > h2 {
+    margin-bottom: $sp_base * .8;
+  }
+}
+
+.bg {
+  &-gray { background: $c_fog; }
+  &-blue { background: $c_blue; }
+}

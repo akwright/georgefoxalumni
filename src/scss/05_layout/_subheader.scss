@@ -50,8 +50,8 @@ body.alumni .subheader {
   
   body.alumni .subheader .navbar .nav li {
     margin-bottom: 0;
-    margin-left: 1.6rem;
-    padding-top: 0.8rem;
+    margin-left: $sp_base * .64;
+    padding-top: $sp_base * .32;
   }
   
     body.alumni .subheader .navbar .nav>li>a {

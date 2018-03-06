@@ -13,7 +13,7 @@
     
     height: 50px;
     width: 50px;
-    margin: 0 auto 1rem;
+    margin: 0 auto $sp_base * .4;
   }
   
   object {
@@ -29,7 +29,7 @@
   }
   
   h3 {
-    margin-top: 1rem;
+    margin-top: $sp_base * .4;
   }
   
   &.text-center p {
@@ -39,7 +39,7 @@
   }
   
   .btn {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: $sp_base * .4;
+    margin-bottom: $sp_base * .6;
   }
 }

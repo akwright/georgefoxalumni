@@ -14,8 +14,8 @@
     }
   }
   &-wide {
-    padding: .5rem 2.5rem;
+    padding: $sp_base * .2 $sp_base;
     
-    font-size: 21px;
+    font-size: $fontsize_h4;
   }
 }

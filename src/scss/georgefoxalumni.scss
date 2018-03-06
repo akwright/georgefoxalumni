@@ -1,18 +1,14 @@
 // Config
-@import 'vars/*';
-
+@import '00_vars/*';
 
 // General DOM selector styles
-@import 'base/*';
-
+@import '01_base/*';
 
 // General type styling
-@import 'typography/*';
-
+@import '02_typography/*';
 
 // Pieces
-@import 'vendor/*';
-@import 'components/*';
-@import 'widgets/*';
-@import 'layout/*';
-@import 'pages/*';
+@import '03_atoms/*';
+@import '04_components/*';
+@import '05_layout/*';
+@import '06_pages/*';

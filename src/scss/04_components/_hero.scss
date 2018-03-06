@@ -44,7 +44,7 @@
       font-family: $fontfamily_headers;
       
       p {
-        margin-bottom: 1.25rem;
+        margin-bottom: $sp_base * .5;
         
         color: $c_fog;
         font-size: $fontsize_h2;
