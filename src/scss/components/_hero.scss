@@ -19,10 +19,27 @@
   
   &-content {
     position: relative;
-    max-width: 60ch;
+    max-width: 40ch;
     
-    &.align-left {
-      align-self: flex-start;
+    font-size: $fontsize_h2;
+    
+    &--left {
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    &--center {
+      justify-content: center;
+      align-items: center;
+    }
+    
+    &--right {
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    blockquote {
+      
     }
   }
   
