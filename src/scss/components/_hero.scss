@@ -19,7 +19,7 @@
   
   &-content {
     position: relative;
-    max-width: 40ch;
+    max-width: 34ch;
     
     font-size: $fontsize_h2;
     
@@ -39,7 +39,23 @@
     }
     
     blockquote {
+      border-width: 0;
+      color: $c_fog;
+      font-family: $fontfamily_headers;
       
+      p {
+        margin-bottom: 1.25rem;
+        
+        color: $c_fog;
+        font-size: $fontsize_h2;
+        font-weight: 600;
+        line-height: 1.25;
+      }
+      
+      cite {
+        font-size: $fontsize_h4;
+        font-weight: 600;
+      }
     }
   }
   

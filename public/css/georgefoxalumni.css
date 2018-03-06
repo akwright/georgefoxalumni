@@ -85,7 +85,7 @@ h4 {
     width: 100vw; }
   .hero-content {
     position: relative;
-    max-width: 40ch;
+    max-width: 34ch;
     font-size: 35px; }
     .hero-content--left {
       justify-content: flex-start;
@@ -96,6 +96,19 @@ h4 {
     .hero-content--right {
       justify-content: flex-end;
       align-items: center; }
+    .hero-content blockquote {
+      border-width: 0;
+      color: #e7e7e7;
+      font-family: "TradeGothic"; }
+      .hero-content blockquote p {
+        margin-bottom: 1.25rem;
+        color: #e7e7e7;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 1.25; }
+      .hero-content blockquote cite {
+        font-size: 20px;
+        font-weight: 600; }
   .hero-logo {
     position: absolute;
     top: calc(50% - (206px / 2));
