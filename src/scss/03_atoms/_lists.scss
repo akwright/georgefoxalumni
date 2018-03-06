@@ -27,3 +27,50 @@ ul {
     }
   }
 }
+
+.list-icons {
+  display: flex;
+  flex-flow: row wrap;
+  
+  margin: $sp_base auto;
+  max-width: 260px;
+  padding: 0;
+  
+  list-style: none;
+  text-align: left;
+  
+  @media (min-width: 600px) {
+    max-width: 100%;
+  }
+  
+  @media (min-width: 767px) {
+    max-width: 80%;
+  }
+  
+  @media (min-width: 981px) {
+    max-width: initial;
+  }
+  
+  li {
+    flex: 1 0 100%;
+    margin-bottom: $sp_base * .4;
+    
+    font-family: $fontfamily_headers;
+    font-size: $fontsize_h4;
+    font-weight: 600;
+    
+    @media (min-width: 600px) {
+      flex: 1 0 50%;
+      margin-bottom: $sp_base * .8;
+    }
+    
+    @media (min-width: 981px) {
+      flex: 1 0 calc(100% / 3);
+    }
+  }
+    img {
+      display: inline-block;
+      margin-right: $sp_base * .4;
+      max-width: 34px;
+    }
+}
