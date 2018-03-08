@@ -1,0 +1,15 @@
+.block-icon {
+  margin-bottom: $sp_base;
+  
+  img {
+    max-width: 48px;
+  }
+  
+  p {
+    @media (min-width: 980px) {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

@@ -149,6 +149,16 @@ ul.cap-style {
 .social-icon {
   max-width: 52px; }
 
+.block-icon {
+  margin-bottom: 2.5rem; }
+  .block-icon img {
+    max-width: 48px; }
+  @media (min-width: 980px) {
+    .block-icon p {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; } }
+
 .block {
   display: flex;
   flex-wrap: wrap; }
