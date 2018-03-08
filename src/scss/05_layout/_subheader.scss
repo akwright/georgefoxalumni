@@ -48,9 +48,9 @@ body.alumni .subheader {
         
   /* Navbar */
   
-  body.alumni .subheader .navbar .nav li {
+  body.alumni .subheader .navbar .nav > li {
     margin-bottom: 0;
-    margin-left: $sp_base * .64;
+    margin-left: $sp_base * .8;
     padding-top: $sp_base * .32;
   }
   
