@@ -212,10 +212,14 @@ ul.cap-style {
 .hero {
   display: flex;
   flex-flow: row wrap;
-  height: 400px; }
+  height: 400px;
+  overflow: hidden; }
   @media (min-height: 900px) and (min-width: 1600px) {
     .hero {
       height: 600px; } }
+  .hero-image {
+    position: absolute;
+    top: -50%; }
   .hero-content {
     position: relative;
     max-width: 34ch;

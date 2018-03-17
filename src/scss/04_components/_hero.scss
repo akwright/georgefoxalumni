@@ -3,9 +3,15 @@
   flex-flow: row wrap;
 
   height: 400px;
+  overflow: hidden;
   
   @media (min-height: 900px) and (min-width: 1600px) {
     height: 600px;
+  }
+  
+  &-image {
+    position: absolute;
+    top: -50%;
   }
   
   &-content {
