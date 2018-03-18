@@ -1,0 +1,105 @@
+body.alumni .subheader .navbar .nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  width: calc(100% - 134px);
+  
+  margin-right: 0;
+  
+  background: $c_fog;
+  
+  @media (min-width: 48em) {
+    margin-right: 10px;
+    position: static;
+    display: block;
+    width: auto;
+    
+    background: transparent;
+  }
+}
+
+body.alumni .subheader .navbar .nav > li {
+  display: block;
+  float: none;
+  
+  margin-bottom: 0;
+  margin-left: $sp_base * .68;
+  padding-top: $sp_base * .32;
+  
+  @media (min-width: 48em) {
+    display: list-item;
+    float: left;
+  }
+  
+  @media (min-width: 49em) {
+    margin-left: $sp_base * .8;
+  }
+}
+
+  body.alumni .subheader .navbar .nav>li>a {
+    padding: 0;
+    
+    color: $c_navy;
+    font-size: 19px;
+    font-family: $fontfamily_headers;
+    font-weight: bold;
+    text-shadow: none;
+  }
+    body.alumni .subheader .navbar .nav>.active>a,
+    body.alumni .subheader .navbar .nav>.active>a:hover,
+    body.alumni .subheader .navbar .nav>.active>a:focus {
+      background: transparent;
+      color: currentColor;
+      position: relative;
+      
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    
+    @media (min-width: 48em) {
+      body.alumni .subheader .navbar .nav>.active>a::after,
+      body.alumni .subheader .navbar .nav>.active>a:hover::after,
+      body.alumni .subheader .navbar .nav>.active>a:focus::after {
+        content: '';
+        
+        position: absolute;
+        bottom: -1px;
+        left: -2px;
+        height: 2px;
+        width: calc(100% + 4px);
+        
+        background: $c_gold;
+      }
+    }
+      
+      
+body.alumni .subheader .btn-navbar {
+  margin-right: $sp_base * .4;
+  padding: $sp_base * .25 $sp_base * .5 $sp_base * .15 $sp_base * .25;
+  position: relative;
+  
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: $c_black;
+  font-size: 130%;
+  text-shadow: none;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 64%;
+    
+    height: 0;
+    width: 0;
+    
+    border: 1px solid $c_black;
+    border-width: 6px 5px;
+    border-color: $c_black transparent transparent;
+    
+    transform: translateY(-50%);
+    transition: transform .2s ease;
+  }
+}

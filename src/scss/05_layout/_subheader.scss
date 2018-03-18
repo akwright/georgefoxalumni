@@ -6,83 +6,9 @@ body.alumni .subheader {
     
   .container {
     margin-bottom: 0;
+    
+    @media (max-width: 979px) and (min-width: 768px) {
+      width: auto;
+    }
   }
 }
-    
-    body.alumni .sectionTitle {
-      padding-left: 0;
-      position: relative;
-      min-width: 280px;
-      
-      float: left;
-      
-      background: $c_gold;
-      color: $c_black;
-      font-size: $fontsize_h4;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      text-shadow: none;
-    }
-      body.alumni .sectionTitle::before {
-        content: '';
-        
-        position: absolute;
-        top: 0; left: 0;
-        height: 100%;
-        width: 100vw;
-        margin-left: -100vw;
-        
-        background: $c_gold;
-      }
-    
-      body.alumni .sectionTitle a {
-        display: block;
-        padding: 4px 0;
-        
-        color: currentColor;
-      }
-        body.alumni .sectionTitle a:hover {
-          color: currentColor;
-          border-bottom-width: 0;
-        }
-        
-  /* Navbar */
-  
-  body.alumni .subheader .navbar .nav > li {
-    margin-bottom: 0;
-    margin-left: $sp_base * .8;
-    padding-top: $sp_base * .32;
-  }
-  
-    body.alumni .subheader .navbar .nav>li>a {
-      padding: 0;
-      
-      color: $c_navy;
-      font-size: 19px;
-      font-family: $fontfamily_headers;
-      font-weight: bold;
-      text-shadow: none;
-    }
-      body.alumni .subheader .navbar .nav>.active>a,
-      body.alumni .subheader .navbar .nav>.active>a:hover,
-      body.alumni .subheader .navbar .nav>.active>a:focus {
-        background: transparent;
-        color: currentColor;
-        position: relative;
-        
-        -webkit-box-shadow: none;
-        box-shadow: none;
-      }
-        body.alumni .subheader .navbar .nav>.active>a::after,
-        body.alumni .subheader .navbar .nav>.active>a:hover::after,
-        body.alumni .subheader .navbar .nav>.active>a:focus::after {
-          content: '';
-          
-          position: absolute;
-          bottom: -1px;
-          left: -2px;
-          height: 2px;
-          width: calc(100% + 4px);
-          
-          background: $c_gold;
-        }

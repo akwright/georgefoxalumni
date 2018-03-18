@@ -1,6 +1,8 @@
 .dropdown {
-  &:hover .dropdown-menu {
-    display: block;
+  @media (min-width: 48em) {
+    &:hover .dropdown-menu {
+      display: block;
+    }
   }
   
   &-menu {
