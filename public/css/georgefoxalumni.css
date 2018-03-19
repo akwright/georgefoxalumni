@@ -80,10 +80,13 @@ h4 {
     transform: translateX(-50%); } }
 
 .journal-image {
-  max-width: 300px;
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto; }
+  @media (min-width: 25em) {
+    .journal-image {
+      max-width: 300px; } }
 
 .full-image {
   position: relative;
@@ -240,8 +243,17 @@ ul.cap-style {
 .hero {
   display: flex;
   flex-flow: row wrap;
-  height: 400px;
+  height: 200px;
   overflow: hidden; }
+  @media (min-width: 23.75em) {
+    .hero {
+      height: 250px; } }
+  @media (min-width: 28em) {
+    .hero {
+      height: 300px; } }
+  @media (min-width: 37.5em) {
+    .hero {
+      height: 400px; } }
   @media (min-height: 900px) and (min-width: 1600px) {
     .hero {
       height: 600px; } }
@@ -278,9 +290,14 @@ ul.cap-style {
         font-weight: 600; }
   .hero-logo {
     position: absolute;
-    top: calc(50% - (206px / 2));
-    left: calc(50% - (242px / 2));
-    max-width: 242px; }
+    top: calc(50% - (136px / 2));
+    left: calc(50% - (160px / 2));
+    max-width: 160px; }
+    @media (min-width: 28em) {
+      .hero-logo {
+        max-width: 242px;
+        top: calc(50% - (206px / 2));
+        left: calc(50% - (242px / 2)); } }
 
 .info-block {
   margin-bottom: 3.75rem; }
