@@ -481,10 +481,12 @@ body.alumni .sectionTitle span {
       display: inline; } }
 
 .alumni-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
+  padding: 4rem 0.625rem; }
   .alumni-section > h2 {
     margin-bottom: 2rem; }
+  @media (min-width: 48em) {
+    .alumni-section {
+      padding: 4rem 0; } }
 
 .bg-gray {
   background: #e7e7e7; }
