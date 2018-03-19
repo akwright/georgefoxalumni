@@ -4,16 +4,20 @@ body.alumni .subheader .navbar .nav {
   right: 0;
   left: auto;
   width: calc(100% - 134px);
+  max-width: 306px;
   
   margin-right: 0;
   
   background: $c_fog;
   
   @media (min-width: 48em) {
+    max-width: initial;
     margin-right: 10px;
     position: static;
     display: block;
     width: auto;
+    height: auto;
+    overflow: initial;
     
     background: transparent;
   }
@@ -24,12 +28,13 @@ body.alumni .subheader .navbar .nav > li {
   float: none;
   
   margin-bottom: 0;
-  margin-left: $sp_base * .68;
-  padding-top: $sp_base * .32;
   
   @media (min-width: 48em) {
     display: list-item;
     float: left;
+    
+    margin-left: $sp_base * .68;
+    padding-top: $sp_base * .32;
   }
   
   @media (min-width: 49em) {
@@ -38,23 +43,40 @@ body.alumni .subheader .navbar .nav > li {
 }
 
   body.alumni .subheader .navbar .nav>li>a {
-    padding: 0;
+    margin-left: $sp_base * .4;
+    padding: $sp_base * .32 0 $sp_base * .32 $sp_base * .28;
     
+    border-bottom: 1px solid $c_white;
     color: $c_navy;
     font-size: 19px;
     font-family: $fontfamily_headers;
     font-weight: bold;
     text-shadow: none;
+    
+    @media (min-width: 48em) {
+      margin-left: 0;
+      padding: 0;
+      
+      border-bottom-width: 0;
+    }
   }
     body.alumni .subheader .navbar .nav>.active>a,
     body.alumni .subheader .navbar .nav>.active>a:hover,
     body.alumni .subheader .navbar .nav>.active>a:focus {
-      background: transparent;
-      color: currentColor;
-      position: relative;
+      margin-left: 0;
+      padding-left: $sp_base * .68;
       
+      background: $c_gold;
       -webkit-box-shadow: none;
       box-shadow: none;
+      color: $c_white;
+      
+      @media (min-width: 48em) {
+        padding-left: 0;
+        background: transparent;
+        color: currentColor;
+        position: relative;
+      }
     }
     
     @media (min-width: 48em) {

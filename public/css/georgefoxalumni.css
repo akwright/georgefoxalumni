@@ -299,46 +299,66 @@ body.alumni .subheader .navbar .nav {
   right: 0;
   left: auto;
   width: calc(100% - 134px);
+  max-width: 306px;
   margin-right: 0;
   background: #e7e7e7; }
   @media (min-width: 48em) {
     body.alumni .subheader .navbar .nav {
+      max-width: initial;
       margin-right: 10px;
       position: static;
       display: block;
       width: auto;
+      height: auto;
+      overflow: initial;
       background: transparent; } }
 
 body.alumni .subheader .navbar .nav > li {
   display: block;
   float: none;
-  margin-bottom: 0;
-  margin-left: 1.7rem;
-  padding-top: 0.8rem; }
+  margin-bottom: 0; }
   @media (min-width: 48em) {
     body.alumni .subheader .navbar .nav > li {
       display: list-item;
-      float: left; } }
+      float: left;
+      margin-left: 1.7rem;
+      padding-top: 0.8rem; } }
   @media (min-width: 49em) {
     body.alumni .subheader .navbar .nav > li {
       margin-left: 2rem; } }
 
 body.alumni .subheader .navbar .nav > li > a {
-  padding: 0;
+  margin-left: 1rem;
+  padding: 0.8rem 0 0.8rem 0.7rem;
+  border-bottom: 1px solid #fff;
   color: #0e1f32;
   font-size: 19px;
   font-family: "TradeGothic";
   font-weight: bold;
   text-shadow: none; }
+  @media (min-width: 48em) {
+    body.alumni .subheader .navbar .nav > li > a {
+      margin-left: 0;
+      padding: 0;
+      border-bottom-width: 0; } }
 
 body.alumni .subheader .navbar .nav > .active > a,
 body.alumni .subheader .navbar .nav > .active > a:hover,
 body.alumni .subheader .navbar .nav > .active > a:focus {
-  background: transparent;
-  color: currentColor;
-  position: relative;
+  margin-left: 0;
+  padding-left: 1.7rem;
+  background: #c9a017;
   -webkit-box-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+  color: #fff; }
+  @media (min-width: 48em) {
+    body.alumni .subheader .navbar .nav > .active > a,
+    body.alumni .subheader .navbar .nav > .active > a:hover,
+    body.alumni .subheader .navbar .nav > .active > a:focus {
+      padding-left: 0;
+      background: transparent;
+      color: currentColor;
+      position: relative; } }
 
 @media (min-width: 48em) {
   body.alumni .subheader .navbar .nav > .active > a::after,
@@ -379,9 +399,9 @@ body.alumni .subheader .btn-navbar {
   position: relative; }
 
 body.alumni .sectionTitle {
-  padding: 4px 0 4px 1.5rem;
+  padding: 4px 0 4px 1rem;
   position: relative;
-  min-width: 110px;
+  min-width: 90px;
   float: left;
   background: #c9a017;
   color: #1a1a1a;
@@ -389,6 +409,13 @@ body.alumni .sectionTitle {
   letter-spacing: 4px;
   text-transform: uppercase;
   text-shadow: none; }
+  @media (min-width: 21.75em) {
+    body.alumni .sectionTitle {
+      padding-left: 1.5rem;
+      min-width: 110px; } }
+  @media (min-width: 32.25em) and (max-width: 48em) {
+    body.alumni .sectionTitle {
+      min-width: 280px; } }
   @media (min-width: 61.25em) {
     body.alumni .sectionTitle {
       padding: 4px 0;
@@ -406,6 +433,9 @@ body.alumni .sectionTitle::before {
 
 body.alumni .sectionTitle span {
   display: none; }
+  @media (min-width: 32.25em) and (max-width: 48em) {
+    body.alumni .sectionTitle span {
+      display: inline; } }
   @media (min-width: 61.25em) {
     body.alumni .sectionTitle span {
       display: inline; } }
