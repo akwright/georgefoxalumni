@@ -10,14 +10,27 @@
 }
 
 .full-image {
+  display: flex;
+  
   position: relative;
-  height: 525px;
+  height: 275px;
   overflow: hidden;
+  
+  @media (min-width: 48em) {
+    height: 400px;
+  }
+  
+  @media (min-width: 64em) {
+    height: 525px;
+  }
   
   img {
     position: absolute;
+    top: 0;
     left: 0;
+    height: 100%;
     width: 100vw;
+    object-fit: cover;
   }
 }
 
