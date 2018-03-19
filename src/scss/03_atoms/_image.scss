@@ -1,8 +1,12 @@
 .journal-image {
-  max-width: 300px;
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
+  @media (min-width: 25em) {
+    max-width: 300px;
+  }
 }
 
 .full-image {
