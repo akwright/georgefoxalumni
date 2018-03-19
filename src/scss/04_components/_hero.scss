@@ -2,8 +2,20 @@
   display: flex;
   flex-flow: row wrap;
 
-  height: 400px;
+  height: 200px;
   overflow: hidden;
+  
+  @media (min-width: 23.75em) {
+    height: 250px;
+  }
+  
+  @media (min-width: 28em) {
+    height: 300px;
+  }
+  
+  @media (min-width: 37.5em) {
+    height: 400px;
+  }
   
   @media (min-height: 900px) and (min-width: 1600px) {
     height: 600px;
@@ -61,9 +73,15 @@
   
   &-logo {
     position: absolute;
-    top: calc(50% - (206px / 2) );
-    left: calc(50% - (242px / 2) );
+    top: calc(50% - (136px / 2) );
+    left: calc(50% - (160px / 2) );
     
-    max-width: 242px;
+    max-width: 160px;
+    
+    @media (min-width: 28em) {
+      max-width: 242px;
+      top: calc(50% - (206px / 2) );
+      left: calc(50% - (242px / 2) );
+    }
   }
 }
