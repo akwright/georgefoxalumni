@@ -79,6 +79,17 @@ body.alumni .subheader .navbar .nav > li {
       }
     }
     
+    body.alumni .subheader .navbar .nav li.dropdown.open>.dropdown-toggle,
+    body.alumni .subheader .navbar .nav li.dropdown.active>.dropdown-toggle,
+    body.alumni .subheader .navbar .nav li.dropdown.open.active>.dropdown-toggle {
+      margin-left: 0;
+      padding-left: $sp_base * .68;
+      
+      background: $c_blue;
+      border-bottom-width: 0;
+      color: $c_white;
+    }
+    
     @media (min-width: 48em) {
       body.alumni .subheader .navbar .nav>.active>a::after,
       body.alumni .subheader .navbar .nav>.active>a:hover::after,
