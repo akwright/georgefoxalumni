@@ -16,3 +16,10 @@ body.alumni {
     }
   }
 }
+
+@media (max-width: 47.9375em) {
+  body.alumni [class*="span"],
+  body.alumni .row-fluid [class*="span"] {
+    position: relative;
+  }
+}
