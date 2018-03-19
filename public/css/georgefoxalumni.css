@@ -284,9 +284,15 @@ ul.cap-style {
       .hero-content blockquote p {
         margin-bottom: 1.25rem;
         color: #e7e7e7;
-        font-size: 35px;
+        font-size: 20px;
         font-weight: 600;
         line-height: 1.25; }
+        @media (min-width: 28.75em) {
+          .hero-content blockquote p {
+            font-size: 28px; } }
+        @media (min-width: 37.5em) {
+          .hero-content blockquote p {
+            font-size: 35px; } }
       .hero-content blockquote cite {
         font-size: 20px;
         font-weight: 600; }

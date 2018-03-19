@@ -61,9 +61,17 @@
         margin-bottom: $sp_base * .5;
         
         color: $c_fog;
-        font-size: $fontsize_h2;
+        font-size: $fontsize_h4;
         font-weight: 600;
         line-height: 1.25;
+        
+        @media (min-width: 28.75em) {
+          font-size: $fontsize_h3;
+        }
+        
+        @media (min-width: 37.5em) {
+          font-size: $fontsize_h2;
+        }
       }
       
       cite {
