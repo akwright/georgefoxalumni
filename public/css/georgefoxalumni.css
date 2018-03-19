@@ -12,6 +12,11 @@ body.alumni {
         padding-left: 1.25rem;
         padding-right: 1.25rem; } }
 
+@media (max-width: 47.9375em) {
+  body.alumni [class*="span"],
+  body.alumni .row-fluid [class*="span"] {
+    position: relative; } }
+
 h1, h2, h3, h4 {
   color: #1a1a1a; }
 
@@ -67,6 +72,12 @@ h4 {
 .btn-wide {
   padding: 0.5rem 2.5rem;
   font-size: 20px; }
+
+@media (max-width: 47.9375em) {
+  .btn-center-mobile {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); } }
 
 .journal-image {
   max-width: 300px;
@@ -580,3 +591,7 @@ body.alumni .subheader {
 
 .upcoming-events {
   padding-bottom: 10rem; }
+
+@media (max-width: 47.9375em) {
+  .homepage-journal {
+    margin-top: 3.75rem; } }
