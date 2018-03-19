@@ -1,3 +1,9 @@
 .upcoming-events {
   padding-bottom: $sp_base * 4;
 }
+
+.homepage-journal {
+  @media (max-width: 47.9375em) {
+    margin-top: $sp_base * 1.5;
+  }
+}
