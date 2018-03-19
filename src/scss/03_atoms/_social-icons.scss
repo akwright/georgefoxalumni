@@ -1,3 +1,11 @@
 .social-icon {
-  max-width: 52px;
+  max-width: 24px;
+  
+  @media (min-width: 22.5em) {
+    max-width: 36px;
+  }
+  
+  @media (min-width: 33.75em) {
+    max-width: 52px
+  }
 }

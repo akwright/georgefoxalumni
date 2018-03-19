@@ -8,11 +8,16 @@
   justify-content: center;
   
   li {
-    margin-left: $sp_base * .6;
-    margin-right: $sp_base * .6;
+    margin-left: $sp_base * .4;
+    margin-right: $sp_base * .4;
     
     &:first-child { margin-left: 0; }
     &:last-child { margin-right: 0; }
+    
+    @media (min-width: 33.75em) {
+      margin-left: $sp_base * .6;
+      margin-right: $sp_base * .6;
+    }
   }
   
   a {

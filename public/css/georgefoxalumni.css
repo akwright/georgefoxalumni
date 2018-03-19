@@ -169,7 +169,13 @@ ul.cap-style {
     z-index: -1; }
 
 .social-icon {
-  max-width: 52px; }
+  max-width: 24px; }
+  @media (min-width: 22.5em) {
+    .social-icon {
+      max-width: 36px; } }
+  @media (min-width: 33.75em) {
+    .social-icon {
+      max-width: 52px; } }
 
 .block-icon {
   margin-bottom: 2.5rem; }
@@ -561,12 +567,16 @@ body.alumni .sectionTitle span {
   align-items: center;
   justify-content: center; }
   .social-list li {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem; }
+    margin-left: 1rem;
+    margin-right: 1rem; }
     .social-list li:first-child {
       margin-left: 0; }
     .social-list li:last-child {
       margin-right: 0; }
+    @media (min-width: 33.75em) {
+      .social-list li {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem; } }
   .social-list a {
     display: block;
     transition: transform .2s ease; }
