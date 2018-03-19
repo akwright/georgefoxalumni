@@ -16,3 +16,11 @@
     width: 100vw;
   }
 }
+
+.image {
+  img {
+    @media (max-width: 47.9375em) {
+      width: 100%;
+    }
+  }
+}

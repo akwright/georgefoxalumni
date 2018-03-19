@@ -83,6 +83,10 @@ h4 {
     left: 0;
     width: 100vw; }
 
+@media (max-width: 47.9375em) {
+  .image img {
+    width: 100%; } }
+
 ul.no-style {
   list-style: none; }
 
@@ -481,7 +485,7 @@ body.alumni .sectionTitle span {
       display: inline; } }
 
 .alumni-section {
-  padding: 4rem 0.625rem; }
+  padding: 4rem 1.25rem; }
   .alumni-section > h2 {
     margin-bottom: 2rem; }
   @media (min-width: 48em) {
