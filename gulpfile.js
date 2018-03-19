@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const plugins = require('gulp-load-plugins');
 const autoprefixer = require('autoprefixer');
+const newer = require('gulp-newer');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 
@@ -65,12 +66,12 @@ gulp.task('scss', () => {
 
 // Minify the CSS for production
 gulp.task('cssmin', () => {
-  return gulp.src(paths.css.src + '**/*.scss')
+  return gulp.src(paths.scss)
     .pipe(plugins().sassGlob())
     .pipe(plugins().sass({
       'outputStyle': 'compressed'
     }).on('error', plugins().sass.logError))
-    .pipe(gulp.dest(paths.css.dest));
+    .pipe(gulp.dest(paths.css));
 });
 
 /* ----------------- */
