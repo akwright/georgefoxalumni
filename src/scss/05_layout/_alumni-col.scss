@@ -1,4 +1,9 @@
 .alumni-col {
+  margin-bottom: $sp_base;
+  
+  @media (min-width: 48em) {
+    margin-bottom: 0;
+  }
   
   .item-link {
     color: $c_black;
