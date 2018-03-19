@@ -1,8 +1,12 @@
 body.alumni .subheader {
-  padding: 0;
+  padding: 0 $sp_base * .5;
   
   background: $c_fog;
   box-shadow: none;
+  
+  @media (min-width: 48em) {
+    padding: 0;
+  }
     
   .container {
     margin-bottom: 0;

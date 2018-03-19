@@ -4,6 +4,13 @@ body.alumni {
   -moz-osx-font-smoothing: grayscale;
   font-size: 15px;
   line-height: 1.6; }
+  @media (max-width: 47.9375em) {
+    body.alumni {
+      padding-left: 0;
+      padding-right: 0; }
+      body.alumni #footerHolder {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; } }
 
 h1, h2, h3, h4 {
   color: #1a1a1a; }
@@ -554,9 +561,12 @@ body.alumni .sectionTitle span {
       transition: transform .05s ease; }
 
 body.alumni .subheader {
-  padding: 0;
+  padding: 0 1.25rem;
   background: #e7e7e7;
   box-shadow: none; }
+  @media (min-width: 48em) {
+    body.alumni .subheader {
+      padding: 0; } }
   body.alumni .subheader .container {
     margin-bottom: 0; }
     @media (max-width: 979px) and (min-width: 768px) {

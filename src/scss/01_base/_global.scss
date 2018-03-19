@@ -5,4 +5,14 @@ body.alumni {
   
   font-size: $fontsize_body;
   line-height: $lineheight_body;
+  
+  @media (max-width: 47.9375em) {
+    padding-left: 0;
+    padding-right: 0;
+    
+    #footerHolder {
+      padding-left: $sp_base * .5;
+      padding-right: $sp_base * .5;
+    }
+  }
 }
