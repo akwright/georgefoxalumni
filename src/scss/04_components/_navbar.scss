@@ -88,6 +88,12 @@ body.alumni .subheader .navbar .nav > li {
       background: $c_blue;
       border-bottom-width: 0;
       color: $c_white;
+      
+      @media (min-width: 48em) {
+        padding-left: 0;
+        background: transparent;
+        color: currentColor;
+      }
     }
     
     @media (min-width: 48em) {
