@@ -218,8 +218,10 @@ ul.cap-style {
     .hero {
       height: 600px; } }
   .hero-image {
-    position: absolute;
-    top: -50%; }
+    position: absolute; }
+    @media (min-width: 56.25em) {
+      .hero-image {
+        top: -50%; } }
   .hero-content {
     position: relative;
     max-width: 34ch;
@@ -444,7 +446,7 @@ body.alumni .sectionTitle {
     body.alumni .sectionTitle {
       padding-left: 1.5rem;
       min-width: 110px; } }
-  @media (min-width: 32.25em) and (max-width: 48em) {
+  @media (min-width: 32.25em) and (max-width: 47.9375em) {
     body.alumni .sectionTitle {
       min-width: 280px; } }
   @media (min-width: 61.25em) {
@@ -464,7 +466,7 @@ body.alumni .sectionTitle::before {
 
 body.alumni .sectionTitle span {
   display: none; }
-  @media (min-width: 32.25em) and (max-width: 48em) {
+  @media (min-width: 32.25em) and (max-width: 47.9375em) {
     body.alumni .sectionTitle span {
       display: inline; } }
   @media (min-width: 61.25em) {

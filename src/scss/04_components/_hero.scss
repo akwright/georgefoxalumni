@@ -11,9 +11,12 @@
   
   &-image {
     position: absolute;
-    top: -50%;
     // Change position of top on smaller screens and only use -50%
     // on larger displays.
+    
+    @media (min-width: 56.25em) {
+      top: -50%;
+    }
   }
   
   &-content {
