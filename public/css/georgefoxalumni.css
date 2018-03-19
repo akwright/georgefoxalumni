@@ -258,10 +258,12 @@ ul.cap-style {
     .hero {
       height: 600px; } }
   .hero-image {
-    position: absolute; }
-    @media (min-width: 56.25em) {
-      .hero-image {
-        top: -50%; } }
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover; }
   .hero-content {
     position: relative;
     max-width: 34ch;

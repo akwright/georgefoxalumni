@@ -23,10 +23,12 @@
   
   &-image {
     position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
     
-    @media (min-width: 56.25em) {
-      top: -50%;
-    }
+    object-fit: cover;
   }
   
   &-content {
