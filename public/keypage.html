@@ -1,119 +1,88 @@
-{% extends "layout.njk" %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="itemscope" itemtype="https://schema.org/WebPage" lang="en" xml:lang="en">
+    <head>
+        <!-- Start of Information taken in from system meta-data -->
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <!-- Meta tag to scale website content appropriately for the device -->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Alumni Relations | George Fox University</title>
+        <meta content="Alumni Relations helps keep former students and graduates of George Fox University connected and involved with the university and current students." name="description" />
+        <meta content="Alumni Relations | George Fox University" itemprop="name" /> 
+        <meta content="unsafe-url" name="referrer" />
+        
+        <link href="https://www.georgefox.edu/alumni/index.html" rel="canonical" />
+        
+        <!-- Core JS Libraries -->
+        <script src="https://www.georgefox.edu/template/global/js/jquery-core/jquery-1.10.2.min.js" type="text/JavaScript"></script>
+        <!-- End of Core JS Libraries -->
+        
+        <!-- Start of Bootstrap files -->
+        <link href="https://www.georgefox.edu/template/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet" />
+        <script src="https://www.georgefox.edu/template/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="https://www.georgefox.edu/template/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://www.georgefox.edu/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="/template/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+        <!-- End of Bootstrap files -->
+         
+        <!-- Start of apple-touch-icon -->
+        <link href="https://www.georgefox.edu/template/global/images/logos/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144" />
+        <link href="https://www.georgefox.edu/template/global/images/logos/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114" />
+        <link href="https://www.georgefox.edu/template/global/images/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72" />
+        <link href="https://www.georgefox.edu/template/global/images/apple-touch-icon-precomposed.png" rel="apple-touch-icon" />                    
+        <!-- End of apple-touch-icon -->         
+         
+                
+        <!-- Start of template css -->
+        <link href="https://www.georgefox.edu/template/global/css/2013-redesign/TradeGothic-SSL.css" rel="stylesheet" type="text/css" />
+        <link href="https://www.georgefox.edu/template/global/css/2013-redesign/main.css" rel="stylesheet" type="text/css" />
+        <!-- End of template css -->
+        
+        <!-- Start of print css -->
+        <link href="https://www.georgefox.edu/template/global/css/2013-redesign/print.css" media="print" rel="stylesheet" type="text/css" />
+        <!-- End of print css -->
+        
+        <!-- Start of inline css -->
+        <link href="https://www.georgefox.edu/template/interior/misc/alumni/alumni-style.css" rel="stylesheet" type="text/css" />
+        <link href="/css/georgefoxalumni.css" rel="stylesheet">
 
-{% block site_content %}
-  <div class="hero hero-content--left full-image">
-    <img class="hero-image" src="images/keypage-hero_opt.jpg" alt="Alumn standing in front of brick wall.">
-    <div class="hero-content text-center">
-      <blockquote>
-        <p>Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p>
-        <cite>&mdash; Doug Peterson, class of '72</cite>
-      </blockquote>
-    </div>
-  </div>
-  
-  
-  <!--
-    @TODO - Integrate with Cascade to make dynamic.
-    @FUNCTIONALITY - Provide options for admin and display section accordingly.
-    
-    @OPTION - has_text
-    @TYPE - boolean, checkbox
-    @FUNCTIONALITY - If true, show alignment options. Else, full width video. 
-    
-    @OPTION - text_position
-    @TYPE - radio
-    @VALUES - right, left
-    @FUNCTIONALITY - If right, text on right. If left, text on left.
-  -->
-  <section class="alumni-section container padding-vertical">
-    <div class="row-fluid">
-      <div class="span9">
-        <div class="video-container has-shadow">
-          <iframe src="https://player.vimeo.com/video/103272363?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <!-- End of inline css -->
+        
+        <!-- Start of template javascript -->
+        <script src="https://www.georgefox.edu/template/global/js/main.js" type="text/javascript"></script>
+        <!-- End of template javascript -->
+        
+        <!-- JS Plugins -->
+        <script src="https://www.georgefox.edu/template/global/js/jquery-plugins/jquery.hoverIntent.minified.js" type="text/JavaScript"></script>
+        <script src="https://www.georgefox.edu/template/global/js/jquery-plugins/jquery.cookie.js" type="text/JavaScript"></script>
+                
+        <!-- End of JS Plugins -->
+        
+        <!-- Start of inline javascript -->
+        <script src="https://www.georgefox.edu/template/global/js/jquery.cycle.all.min.js" type="text/javascript"></script>
+        <script src="https://www.georgefox.edu/template/interior/misc/alumni/alumni-home-slideshow.js" type="text/javascript"></script>
+
+</head>
+
+<body class="alumni">
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WR94MR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WR94MR');</script>
+   
+  <!-- Start of header -->
+<div id="header">
+    <form action="#contentStart" id="skip" method="get"><input type="submit" value="Skip to main content" /></form>
+    <header id="headerMain">
+        <div class="container">
+            <div class="pull-left"><a href="https://www.georgefox.edu/" id="headerLogo"><img alt="George Fox University" id="universityLogo" src="https://www.georgefox.edu/template/global/images/george-fox-university-logo.png" title="George Fox University" /></a><a href="https://www.georgefox.edu/be-known/index.html" id="headerbrandMessage"><img alt="Be Known" src="https://www.georgefox.edu/template/global/images/be-known.png" /></a></div>
+            <div class="pull-right" ></div>
         </div>
-      </div>
-      <div class="span3">
-        <h2>Video Title Here</h2>
-        <p>Newberg is a place many fondly call home. Whether you're a George Fox student, a longtime resident or just passing through, there are countless things to do and see.</p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="alumni-section padding-vertical bg-blue callout">
-    <div class="container text-center">
-      <h3>Belonging to the George Fox University Alumni Association is free and fosters loyalty to your university, gives you a voice in alumni affairs, provides leadership opportunities, promotes continued excellence in education, and allows us to serve you with benefits.</h3>
-    </div>
-  </section>
-  
-  <section class="alumni-section container padding-vertical">
-    <div class="row-fluid">
-      <div class="span4 text-center info-block">
-        <img class="info-image" src="images/access-info_opt.jpg" alt="Campus Library building in the fall.">
-        <h3 class="info-title">Access to Information</h3>
-        <p class="info-content">Get access to the Alumni Directory, campus library, university news and updates plus much more.</p>
-        <a class="info-button btn btn-gold btn-wide tradegothic" href="https://www.georgefox.edu/alumni/programs/benefits.html">Learn More</a>
-      </div>
-      
-      <div class="span4 text-center info-block">
-        <img class="info-image" src="images/discount-services_opt.jpg" alt="Students performing a play.">
-        <h3 class="info-title">Discounts on Services</h3>
-        <p class="info-content">Get discounts on things like travel, storage, parking, printing, theater tickets and catering... just to name a few.</p>
-        <a class="info-button btn btn-gold btn-wide tradegothic" href="https://www.georgefox.edu/alumni/programs/benefits.html">Learn More</a>
-      </div>
-      
-      <div class="span4 text-center info-block">
-        <img class="info-image" src="images/events-opportunities_opt.jpg" alt="Bruins football player and coaches posing after a game.">
-        <h3 class="info-title">Events and Opportunities</h3>
-        <p class="info-content">Get involved by volunteering for campus events, travel, and have the opportunity to be honored with an alumni award.</p>
-        <a class="info-button btn btn-gold btn-wide tradegothic" href="https://www.georgefox.edu/alumni/events/index.html">Learn More</a>
-      </div>
-    </div>
-  </section>
-  
-  <section class="full-image">
-    <img src="images/keypage-full-image_opt.jpg" alt="Smiling alumn with family on campus.">
-  </section>
-  
-  <section class="alumni-section container padding-vertical text-center">
-    <h2>Benefits for Children of Alumni</h2>
-    <p>As a George Fox alum, your children have lots of opportunities to get involved at George Fox. Everything from sports camps to pen pals, campus visits to outreach experiences, your kids have many ways to experience Bruin life, and it starts right when they are born!</p>
-    <ul class="list-icons">
-      <li><img src="images/icons/T-shirt.svg" alt="tshirt icon" aria-hidden="true">Lil' Bruins T-shirt</li>
-      <li><img src="images/icons/Hat.svg" alt="hat icon" aria-hidden="true">Bruin Sports Day</li>
-      <li><img src="images/icons/Book.svg" alt="book icon" aria-hidden="true">Friday@Fox & Campus Visits</li>
-      <li><img src="images/icons/Pencil.svg" alt="pencil icon" aria-hidden="true">Penn Pals Kid's Club</li>
-      <li><img src="images/icons/Science-1.svg" alt="science icon" aria-hidden="true">Science Outreach Program</li>
-      <li><img src="images/icons/Bruin.svg" alt="bruin icon" aria-hidden="true">Bruin Preview</li>
-      <li><img src="images/icons/Football.svg" alt="football icon" aria-hidden="true">Homecoming</li>
-      <li><img src="images/icons/Trophy.svg" alt="trophy icon" aria-hidden="true">Sports Camps</li>
-      <li><img src="images/icons/Star.svg" alt="star icon" aria-hidden="true">Legacy Program</li>
-    </ul>
-    <a class="btn btn-gold btn-wide tradegothic" href="https://www.georgefox.edu/alumni/programs/children_of_alumni/index.html">Learn More</a>
-  </section>
-  
-  <section class="block-grid">
-    <div class="block photo-left">
-      <div class="block-photo">
-        <img src="images/update-info-photo_opt.jpg" alt="Alumn with her grandmother on campus.">
-      </div>
-      <div class="block-content bg-blue text-center text-white">
-        <h2>Update Your Information</h2>
-        <p>It is a simple way to let your classmates and other alumni know what you have been up to and connect with you!</p>
-        <a class="btn btn-gold btn-wide tradegothic" href="https://www.georgefox.edu/alumni/alumni_update_form.html">Learn More</a>
-      </div>
-    </div>
-    <div class="block photo-right">
-      <div class="block-photo">
-        <img src="images/directory-photo_opt.jpg" alt="Alumn smiling with her family.">
-      </div>
-      <div class="block-content bg-blue text-center text-white">
-        <h2>Alumni Directory</h2>
-        <p>This password-protected system allows George Fox alumni to find contact information for other alumni.</p>
-        <a class="btn btn-gold btn-wide tradegothic" href="https://www.georgefox.edu/alumni/programs/mygfu.html">Learn More</a>
-      </div>
-    </div>
-  </section>
-{% endblock %}gothic" data-target="#headerNav .nav-collapse" data-toggle="collapse">Main menu</a>
+    </header>
+    <div class="navbar navbar-inverse navbar-fixed-top" id="headerNav">
+        <div class="navbar-inner">
+            <div class="container"><!-- Google Search Form --><form action="//www.georgefox.edu/search/search.html" class="navbar-search form-search pull-right" id="cse_searchbox" role="search"><input name="cx" type="hidden" value="000111765645995066711:ny_zleug7qg" /> <input name="cof" type="hidden" value="FORID:10" />
+            <div class="input-prepend"><button class="btn btn-inverse" id="sa" name="sa" type="submit"><span class="icon-white icon-search" ></span></button> <input class="span3 search-query" id="q" name="q" placeholder="Search George Fox" type="text" /></div>
+            <!--<button type="submit" class="btn" id="sa" name="sa"></button>--></form><!-- End Google Search Form --><a class="btn btn-navbar collapse-btn tradegothic" data-target="#headerNav .nav-collapse" data-toggle="collapse">Main menu</a>
                 <div class="topNavLogo"><a href="//www.georgefox.edu">George Fox University Homepage</a></div>
                 <ul class="nav tradegothic nav-collapse collapse">
                     <li class="visible-phone"><a href="https://www.georgefox.edu/index.html">Home</a></li>

@@ -1,71 +1,80 @@
-{% extends "layout.njk" %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="itemscope" itemtype="https://schema.org/WebPage" lang="en" xml:lang="en">
+    <head>
+        <!-- Start of Information taken in from system meta-data -->
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <!-- Meta tag to scale website content appropriately for the device -->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Alumni Relations | George Fox University</title>
+        <meta content="Alumni Relations helps keep former students and graduates of George Fox University connected and involved with the university and current students." name="description" />
+        <meta content="Alumni Relations | George Fox University" itemprop="name" /> 
+        <meta content="unsafe-url" name="referrer" />
+        
+        <link href="https://www.georgefox.edu/alumni/index.html" rel="canonical" />
+        
+        <!-- Core JS Libraries -->
+        <script src="https://www.georgefox.edu/template/global/js/jquery-core/jquery-1.10.2.min.js" type="text/JavaScript"></script>
+        <!-- End of Core JS Libraries -->
+        
+        <!-- Start of Bootstrap files -->
+        <link href="https://www.georgefox.edu/template/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet" />
+        <script src="https://www.georgefox.edu/template/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="https://www.georgefox.edu/template/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://www.georgefox.edu/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="/template/font-awesome/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+        <!-- End of Bootstrap files -->
+         
+        <!-- Start of apple-touch-icon -->
+        <link href="https://www.georgefox.edu/template/global/images/logos/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon" sizes="144x144" />
+        <link href="https://www.georgefox.edu/template/global/images/logos/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon" sizes="114x114" />
+        <link href="https://www.georgefox.edu/template/global/images/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon" sizes="72x72" />
+        <link href="https://www.georgefox.edu/template/global/images/apple-touch-icon-precomposed.png" rel="apple-touch-icon" />                    
+        <!-- End of apple-touch-icon -->         
+         
+                
+        <!-- Start of template css -->
+        <link href="https://www.georgefox.edu/template/global/css/2013-redesign/TradeGothic-SSL.css" rel="stylesheet" type="text/css" />
+        <link href="https://www.georgefox.edu/template/global/css/2013-redesign/main.css" rel="stylesheet" type="text/css" />
+        <!-- End of template css -->
+        
+        <!-- Start of print css -->
+        <link href="https://www.georgefox.edu/template/global/css/2013-redesign/print.css" media="print" rel="stylesheet" type="text/css" />
+        <!-- End of print css -->
+        
+        <!-- Start of inline css -->
+        <link href="https://www.georgefox.edu/template/interior/misc/alumni/alumni-style.css" rel="stylesheet" type="text/css" />
+        <link href="/css/georgefoxalumni.css" rel="stylesheet">
 
-{% block site_content %}
-  <section class="alumni-section container">
-    <h1>Children of Alumni</h1>
-    <img src="images/interior-header-image_opt.jpg" alt="Alumni children having fun with their families.">
-  </section>
-  
-  <section class="alumni-section no-padding-top container">
-    <div class="row-fluid">
-      <div class="span12">
-        <h2>What's Available</h2>
-        <p>Children of alumni have several opportunities to get involved at George Fox, and it starts right when they are born! Read about the many ways your child can connect with George Fox University:</p>
-      </div>
-    </div>
-    <div class="row-fluid">
-      <div class="span4 text-center block-icon">
-        <img src="images/icons/T-shirt.svg" alt="tshirt icon" aria-hidden="true">
-        <h3>Lil' Bruins T-Shirt</h3>
-        <p>Receive a Lil' Bruin T-Shirt when the birth of your baby or the adoption of your child is announced in <a href="https://www.georgefox.edu/journalonline/index.html">Journal</a>. Email Alumni Relations, (<a href="mailto:alumni@georgefox.edu">alumni@georgefox.edu</a>) to notify of the addition to your family within the first year of their birth/adoption.</p>
-      </div>
-      <div class="span4 text-center block-icon">
-        <img src="images/icons/Pencil.svg" alt="pencil icon" aria-hidden="true">
-        <h3>Penn Pal Kid's Club</h3>
-        <p>Pennington is excited to invite all George Fox University Bruin fans age 12 and younger to join the Penn Pals Kids Club. It's a great way to meet our Bruin coaches and athletes, to see Bruin athletic events for free, to spend time on a university campus at a young age, and to have fun with friends! <a href="http://athletics.georgefox.edu/penn-pals">Learn more</a></p>
-      </div>
-      <div class="span4 text-center block-icon">
-        <img src="images/icons/Football.svg" alt="football icon" aria-hidden="true">
-        <h3>Homecoming</h3>
-        <p>Bring your kids back to your alma mater and they will experience what it’s like to be a Bruin! They will love watching the Bruin athletic games and the many more family-friendly activities at Homecoming.</p>
-      </div>
-    </div>
-    <div class="row-fluid">
-      <div class="span4 text-center block-icon">
-        <img src="images/icons/Hat.svg" alt="hat icon" aria-hidden="true">
-        <h3>Athletic Camps</h3>
-        <p>Children of alumni are invited to attend our yearly Bruin Academy athletic camps, which include basketball, volleyball, baseball, softball and soccer camps. Contact Patty Findley at <a href="tel:+15035542910">503-554-2910</a> or <a href="pfindley@georgefox.edu">pfindley@georgefox.edu</a> for more information.</p>
-      </div>
-      <div class="span4 text-center block-icon">
-        <img src="images/icons/Science-1.svg" alt="science icon" aria-hidden="true">
-        <h3>Science Outreach Program</h3>
-        <p>These are classes planned primarily for home-school students and are taught by George Fox upperclassmen science students. For more information, you can visit the Science Outreach Program <a href="https://www.georgefox.edu/science_outreach/info/schedule_fees.html">website</a>.</p>
-      </div>
-      <div class="span4 text-center block-icon">
-        <img src="images/icons/Trophy.svg" alt="trophy icon" aria-hidden="true">
-        <h3>Sports Camps</h3>
-        <p>Spring and summer means sports camp season at George Fox. Youths of all ages are invited to participate in any number of events on campus. <a href="http://athletics.georgefox.edu/camps/index">Click here</a> to read about what camps are offered this summer.</p>
-      </div>
-    </div>
-    <div class="row-fluid">
-      <div class="span4 text-center block-icon">
-        <img src="images/icons/Book.svg" alt="book icon" aria-hidden="true">
-        <h3>Friday@Fox & Campus Visits</h3>
-        <p>Thinking about attending George Fox? Come for a Friday@Fox and spend a day in the life of a student. Between campus tours, class visits, department showcases and residence hall tours, you'll get an authentic look at campus life! Call Undergraduate Admissions at <a href="tel:+15035545540">503-554-5540</a> or go to <a href="https://www.georgefox.edu/college-admissions/visit/index.html">visit.georgefox.edu</a> for more information.</p>
-      </div>
-      <div class="span4 text-center block-icon">
-        <img src="images/icons/Bruin.svg" alt="bruin icon" aria-hidden="true">
-        <h3>Bruin Preview</h3>
-        <p>Have the ultimate George Fox visit experience! Stay overnight with a current student, sit in a class, tour the campus, eat in the Bon and attend student events as you get acquainted with George Fox University. Call Undergraduate Admissions at <a href="tel:+15035545540">503-554-5540</a> or visit <a href="https://www.georgefox.edu/college-admissions/visit/bruin-preview.html">bruinpreview.georgefox.edu</a> for more information.</p>
-      </div>
-      <div class="span4 text-center block-icon">
-        <img src="images/icons/Star.svg" alt="star icon" aria-hidden="true">
-        <h3>Legacy Program</h3>
-        <p>George Fox University is dedicated to the legacy that children of alumni bring to the school. The goal of this program is to increase the number of legacy students at George Fox because we believe a strong legacy enrollment demonstrates confidence in the institution, its education and its mission. We hope that you and your children will consider George Fox.</p>
-      </div>
-    </div>
-  </section>
-{% endblock %}e-known/index.html" id="headerbrandMessage"><img alt="Be Known" src="https://www.georgefox.edu/template/global/images/be-known.png" /></a></div>
+        <!-- End of inline css -->
+        
+        <!-- Start of template javascript -->
+        <script src="https://www.georgefox.edu/template/global/js/main.js" type="text/javascript"></script>
+        <!-- End of template javascript -->
+        
+        <!-- JS Plugins -->
+        <script src="https://www.georgefox.edu/template/global/js/jquery-plugins/jquery.hoverIntent.minified.js" type="text/JavaScript"></script>
+        <script src="https://www.georgefox.edu/template/global/js/jquery-plugins/jquery.cookie.js" type="text/JavaScript"></script>
+                
+        <!-- End of JS Plugins -->
+        
+        <!-- Start of inline javascript -->
+        <script src="https://www.georgefox.edu/template/global/js/jquery.cycle.all.min.js" type="text/javascript"></script>
+        <script src="https://www.georgefox.edu/template/interior/misc/alumni/alumni-home-slideshow.js" type="text/javascript"></script>
+
+</head>
+
+<body class="alumni">
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WR94MR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WR94MR');</script>
+   
+  <!-- Start of header -->
+<div id="header">
+    <form action="#contentStart" id="skip" method="get"><input type="submit" value="Skip to main content" /></form>
+    <header id="headerMain">
+        <div class="container">
+            <div class="pull-left"><a href="https://www.georgefox.edu/" id="headerLogo"><img alt="George Fox University" id="universityLogo" src="https://www.georgefox.edu/template/global/images/george-fox-university-logo.png" title="George Fox University" /></a><a href="https://www.georgefox.edu/be-known/index.html" id="headerbrandMessage"><img alt="Be Known" src="https://www.georgefox.edu/template/global/images/be-known.png" /></a></div>
             <div class="pull-right" ></div>
         </div>
     </header>

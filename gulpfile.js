@@ -30,7 +30,7 @@ gulp.task('dev', ['scss', 'nunjucks'], () => {
 
 
 // Converting njk files to html
-gulp.task('nunjucks', () => {
+gulp.task('nunjucks', ['html'], () => {
   return gulp.src(paths.html)
     .pipe(plugins().data(function() {
       return require('./src/data.json')
@@ -79,4 +79,4 @@ gulp.task('cssmin', () => {
 /* ----------------- */
 
 gulp.task('default', ['dev']);
-gulp.task('deploy', ['nunjucks', 'html', 'cssmin']);
+gulp.task('deploy', ['nunjucks', 'cssmin']);
