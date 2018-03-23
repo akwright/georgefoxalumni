@@ -1,4 +1,5 @@
-.btn {
+.btn,
+a.btn {
   &-gold {
     background: $c_gold;
     color: #fff;
@@ -7,6 +8,7 @@
     box-shadow: none;
     
     transition: ease-in 0.09s;
+    text-decoration: none;
     
     &:hover {
       background: lighten($c_gold, 5%);
