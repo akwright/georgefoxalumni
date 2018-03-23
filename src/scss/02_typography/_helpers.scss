@@ -16,3 +16,11 @@
 .neg-margin-top {
   margin-top: -150px;
 }
+
+.text-center.no-mobile {
+  text-align: left;
+  
+  @media (min-width: 48em) {
+    text-align: center;
+  }
+}
