@@ -372,7 +372,8 @@ ul.cap-style {
     .dropdown-menu li > a {
       display: block;
       padding: 0.375rem 0 0.375rem 3rem;
-      color: #fff; }
+      color: #fff;
+      text-decoration: none; }
       @media (min-width: 48em) {
         .dropdown-menu li > a {
           padding: 0.75rem 1.25rem;
