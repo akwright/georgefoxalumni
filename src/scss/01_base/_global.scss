@@ -7,17 +7,9 @@ body.alumni {
   line-height: $lineheight_body;
   
   @media (max-width: 47.9375em) {
-    padding-left: 0;
-    padding-right: 0;
-    
-    #header,
-    #footerHolder {
-      padding-left: $sp_base * .5;
-      padding-right: $sp_base * .5;
-    }
-    
-    .navbar-fixed-top .navbar-search {
-      padding-right: $sp_base * .5;
+    #main {
+      margin-left: -$sp_base * .5;
+      margin-right: -$sp_base * .5;
     }
   }
 }
