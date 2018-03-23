@@ -1,10 +1,11 @@
 body.alumni .subheader .navbar .nav {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: -$sp_base * .5;
   left: auto;
   width: calc(100% - 134px);
   max-width: 306px;
+  min-width: 250px;
   
   margin-right: 0;
   
@@ -114,7 +115,7 @@ body.alumni .subheader .navbar .nav > li {
       
       
 body.alumni .subheader .btn-navbar {
-  margin-right: $sp_base * .4;
+  margin-right: 0;
   padding: $sp_base * .25 $sp_base * .5 $sp_base * .15 $sp_base * .25;
   position: relative;
   
@@ -141,4 +142,8 @@ body.alumni .subheader .btn-navbar {
     transform: translateY(-50%);
     transition: transform .2s ease;
   }
+}
+
+body.alumni .subheader .navCollapse.in + .btn-navbar::after {
+  transform: translateY(-100%) rotate(180deg);
 }
