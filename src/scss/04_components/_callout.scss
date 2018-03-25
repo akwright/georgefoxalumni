@@ -15,6 +15,15 @@
     margin-right: auto;
     
     color: $c_fog;
+    font-size: 100%;
     line-height: 1.2;
+    
+    @media (min-width: 28.125em) {
+      font-size: 150%;
+    }
+    
+    @media (min-width: 48em) {
+      font-size: 175%;
+    }
   }
 }

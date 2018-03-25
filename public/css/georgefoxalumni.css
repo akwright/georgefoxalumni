@@ -333,7 +333,14 @@ ul.cap-style {
     margin-left: auto;
     margin-right: auto;
     color: #e7e7e7;
+    font-size: 100%;
     line-height: 1.2; }
+    @media (min-width: 28.125em) {
+      .callout h3 {
+        font-size: 150%; } }
+    @media (min-width: 48em) {
+      .callout h3 {
+        font-size: 175%; } }
 
 .alumni #footerHolder a {
   text-decoration: none; }
