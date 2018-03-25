@@ -639,6 +639,9 @@ body.alumni .sectionTitle span {
   padding: 2.25rem 1.25rem; }
   .alumni-section > h2 {
     margin-bottom: 2rem; }
+    .alumni-section > h2 a {
+      color: currentColor;
+      text-decoration: none; }
   @media (min-width: 25.875em) {
     .alumni-section {
       padding: 4rem 1.25rem; } }

@@ -3,6 +3,11 @@
   
   > h2 {
     margin-bottom: $sp_base * .8;
+    
+    a {
+      color: currentColor;
+      text-decoration: none;
+    }
   }
   
   @media (min-width: 25.875em) {
