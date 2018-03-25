@@ -331,6 +331,15 @@ ul.cap-style {
   height: 200px;
   overflow: hidden;
   position: relative; }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("https://www.georgefox.edu/template/global/images/misc/video-overlay.gif") repeat rgba(0, 0, 0, 0.5);
+    opacity: .35; }
   @media (min-width: 23.75em) {
     .hero {
       height: 250px; } }
