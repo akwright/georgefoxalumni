@@ -8,6 +8,10 @@
   }
 }
 
-.no-padding-top {
+.no-padding-top { padding-top: 0 !important; }
+.no-padding-bottom { padding-bottom: 0 !important; }
+
+.no-vertical-padding {
   padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }

@@ -81,6 +81,13 @@ h4 {
 .no-padding-top {
   padding-top: 0 !important; }
 
+.no-padding-bottom {
+  padding-bottom: 0 !important; }
+
+.no-vertical-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
 .btn-gold,
 a.btn-gold {
   background: #c9a017;
