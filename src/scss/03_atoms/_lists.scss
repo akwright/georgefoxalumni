@@ -1,4 +1,8 @@
 ul {
+  &.default {
+    padding-left: $sp_base * .4;
+  }
+  
   &.no-style {
     list-style: none;
   }
