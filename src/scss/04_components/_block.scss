@@ -1,22 +1,30 @@
 .block {
-  display: flex;
-  flex-wrap: wrap;
   
-  &.photo-left { flex-direction: row; }
-  &.photo-right { flex-direction: row-reverse; }
+  @media (min-width: 27.5em) {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &.photo-left { flex-direction: row; }
+    &.photo-right { flex-direction: row-reverse; }
+  }
   
   &-photo,
   &-content {
-    flex: 1 0 100%;
+    
+    @media (min-width: 27.5em) {
+      flex: 1 0 100%;
+    }
     
     @media (min-width: 840px) {
       flex: 1 0 50%;
     }
   }
   
-  &-photo {
-    display: flex;
-    flex-direction: column;
+  &-photo {    
+    @media (min-width: 27.5em) {
+      display: flex;
+      flex-direction: column;
+    }
     
     img {
       display: block;
@@ -24,16 +32,18 @@
     }
   }
   
-  &-content {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+  &-content {    
+    padding: $sp_base $sp_base * .4;
     
-    padding-top: $sp_base * 2;
-    padding-bottom: $sp_base * 2;
+    @media (min-width: 27.5em) {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      padding: $sp_base * 2 0;
+    }
     
-    @media (min-width: 840px) {
+    @media (min-width: 52.5em) {
       padding-top: 0;
       padding-bottom: 0;
     }
