@@ -362,7 +362,8 @@ ul.cap-style {
   .hero-content {
     position: relative;
     max-width: 34ch;
-    font-size: 35px; }
+    font-size: 35px;
+    z-index: 1; }
     .hero-content--left {
       justify-content: flex-start;
       align-items: center; }
@@ -395,7 +396,8 @@ ul.cap-style {
     position: absolute;
     top: calc(50% - (136px / 2));
     left: calc(50% - (160px / 2));
-    max-width: 160px; }
+    max-width: 160px;
+    z-index: 1; }
     @media (min-width: 28em) {
       .hero-logo {
         max-width: 242px;

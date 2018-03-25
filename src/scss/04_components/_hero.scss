@@ -50,6 +50,8 @@
     
     font-size: $fontsize_h2;
     
+    z-index: 1;
+    
     &--left {
       justify-content: flex-start;
       align-items: center;
@@ -100,6 +102,8 @@
     left: calc(50% - (160px / 2) );
     
     max-width: 160px;
+    
+    z-index: 1;
     
     @media (min-width: 28em) {
       max-width: 242px;
