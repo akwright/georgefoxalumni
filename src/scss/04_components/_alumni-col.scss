@@ -1,6 +1,8 @@
 .alumni-col {
   margin-bottom: $sp_base;
   
+  &:last-of-type { margin-bottom: 0; }
+  
   @media (min-width: 48em) {
     margin-bottom: 0;
     
