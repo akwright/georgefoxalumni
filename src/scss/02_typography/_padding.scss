@@ -3,6 +3,9 @@
     padding-top: $sp_base;
     padding-bottom: $sp_base;
   }
+  &-small-top {
+    padding-top: $sp_base * .5 !important;
+  }
 }
 
 .no-padding-top {
