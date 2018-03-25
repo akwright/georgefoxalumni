@@ -20,3 +20,14 @@ body.alumni {
     position: relative;
   }
 }
+
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: calc(100% - 30px);
+  
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
