@@ -67,6 +67,11 @@
       align-items: center;
     }
     
+    h1 {
+      font-size: 150%;
+      text-shadow: 0 2px 20px rgba(0,0,0,.4);
+    }
+    
     blockquote {
       border-width: 0;
       color: $c_fog;
