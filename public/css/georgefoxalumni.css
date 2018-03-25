@@ -383,6 +383,9 @@ ul.cap-style {
     .hero-content--right {
       justify-content: flex-end;
       align-items: center; }
+    .hero-content h1 {
+      font-size: 150%;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4); }
     .hero-content blockquote {
       border-width: 0;
       color: #e7e7e7;
