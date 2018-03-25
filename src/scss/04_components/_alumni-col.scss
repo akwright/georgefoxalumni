@@ -3,6 +3,19 @@
   
   @media (min-width: 48em) {
     margin-bottom: 0;
+    
+    display: flex !important;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    * {
+      flex-basis: 100%;
+    }
+    
+    .btn {
+      flex-basis: auto;
+      align-self: flex-end;
+    }
   }
   
   .item-link {

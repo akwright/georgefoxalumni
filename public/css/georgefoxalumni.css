@@ -216,6 +216,48 @@ ul.cap-style {
     .social-icon {
       max-width: 52px; } }
 
+.alumni-col {
+  margin-bottom: 2.5rem; }
+  @media (min-width: 48em) {
+    .alumni-col {
+      margin-bottom: 0;
+      display: flex !important;
+      flex-flow: row wrap;
+      justify-content: center; }
+      .alumni-col * {
+        flex-basis: 100%; }
+      .alumni-col .btn {
+        flex-basis: auto;
+        align-self: flex-end; } }
+  .alumni-col .item-link {
+    color: #1a1a1a;
+    text-decoration: none; }
+    .alumni-col .item-link:hover {
+      text-decoration: none; }
+  .alumni-col .svg-object {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto 1rem; }
+  .alumni-col object {
+    width: 100%;
+    height: 100%; }
+  .alumni-col img {
+    height: 220px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover; }
+  .alumni-col h3 {
+    margin-top: 1rem; }
+  .alumni-col.text-center p {
+    max-width: 45ch;
+    margin-left: auto;
+    margin-right: auto; }
+  .alumni-col .btn {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem; }
+
 .block-icon {
   margin-bottom: 2.5rem; }
   .block-icon img {
@@ -592,39 +634,9 @@ body.alumni .sectionTitle span {
     height: 100%;
     width: 100%; }
 
-.alumni-col {
-  margin-bottom: 2.5rem; }
-  @media (min-width: 48em) {
-    .alumni-col {
-      margin-bottom: 0; } }
-  .alumni-col .item-link {
-    color: #1a1a1a;
-    text-decoration: none; }
-    .alumni-col .item-link:hover {
-      text-decoration: none; }
-  .alumni-col .svg-object {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    margin: 0 auto 1rem; }
-  .alumni-col object {
-    width: 100%;
-    height: 100%; }
-  .alumni-col img {
-    height: 220px;
-    width: 100%;
-    object-position: center;
-    object-fit: cover; }
-  .alumni-col h3 {
-    margin-top: 1rem; }
-  .alumni-col.text-center p {
-    max-width: 45ch;
-    margin-left: auto;
-    margin-right: auto; }
-  .alumni-col .btn {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem; }
+.alumni-cols {
+  display: flex;
+  flex-flow: row wrap; }
 
 .social-list {
   margin: 1rem 0;
