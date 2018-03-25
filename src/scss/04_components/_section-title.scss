@@ -1,7 +1,7 @@
 body.alumni .sectionTitle {
-  padding: 4px 0 4px 1rem;
+  padding: 4px 0;
   position: relative;
-  min-width: 90px;
+  min-width: 84px;
   
   float: left;
   
@@ -12,12 +12,12 @@ body.alumni .sectionTitle {
   text-transform: uppercase;
   text-shadow: none;
   
-  @media (min-width: 21.75em) {
+  @media (min-width: 23.125em) {
     padding-left: 1.5rem;
     min-width: 110px;
   }
   
-  @media (min-width: 32.25em) and (max-width: 47.9375em) {
+  @media (min-width: 33.75em) and (max-width: 47.9375em) {
     min-width: 280px;
   }
   
@@ -40,7 +40,7 @@ body.alumni .sectionTitle {
   body.alumni .sectionTitle span {
     display: none;
     
-    @media (min-width: 32.25em) and (max-width: 47.9375em) {
+    @media (min-width: 33.75em) and (max-width: 47.9375em) {
       display: inline;
     }
     
