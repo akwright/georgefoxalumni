@@ -1,8 +1,12 @@
 .alumni-section {
-  padding: $sp_base * 1.6 $sp_base * .5;
+  padding: $sp_base * .9 $sp_base * .5;
   
   > h2 {
     margin-bottom: $sp_base * .8;
+  }
+  
+  @media (min-width: 25.875em) {
+    padding: $sp_base * 1.6 $sp_base * .5;
   }
   
   @media (min-width: 48em) {

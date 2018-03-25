@@ -220,6 +220,8 @@ ul.cap-style {
 
 .alumni-col {
   margin-bottom: 2.5rem; }
+  .alumni-col:last-of-type {
+    margin-bottom: 0; }
   @media (min-width: 48em) {
     .alumni-col {
       margin-bottom: 0;
@@ -613,9 +615,12 @@ body.alumni .sectionTitle span {
       display: inline; } }
 
 .alumni-section {
-  padding: 4rem 1.25rem; }
+  padding: 2.25rem 1.25rem; }
   .alumni-section > h2 {
     margin-bottom: 2rem; }
+  @media (min-width: 25.875em) {
+    .alumni-section {
+      padding: 4rem 1.25rem; } }
   @media (min-width: 48em) {
     .alumni-section {
       padding: 4rem 0; } }
