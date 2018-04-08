@@ -749,6 +749,12 @@ body.alumni .subheader {
   .upcoming-events h2 > a {
     text-decoration: underline; }
 
+.benefits h2 {
+  margin-top: 1rem; }
+  @media (min-width: 48em) {
+    .benefits h2 {
+      margin-top: 0; } }
+
 @media (max-width: 47.9375em) {
   .homepage-journal {
     margin-top: 3.75rem; } }

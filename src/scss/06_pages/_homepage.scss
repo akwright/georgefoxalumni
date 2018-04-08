@@ -6,6 +6,14 @@
   }
 }
 
+.benefits h2 {
+  margin-top: $sp_base * .4;
+  
+  @media (min-width: 48em) {
+    margin-top: 0;
+  }
+}
+
 .homepage-journal {
   @media (max-width: 47.9375em) {
     margin-top: $sp_base * 1.5;
