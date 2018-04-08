@@ -251,6 +251,8 @@ ul.cap-style {
     text-decoration: none; }
     .alumni-col .item-link:hover {
       text-decoration: none; }
+    .alumni-col .item-link h3 {
+      text-decoration: underline; }
   .alumni-col .svg-object {
     display: flex;
     align-items: center;
