@@ -746,6 +746,8 @@ body.alumni .subheader {
 
 .upcoming-events {
   padding-bottom: 10rem; }
+  .upcoming-events h2 > a {
+    text-decoration: underline; }
 
 @media (max-width: 47.9375em) {
   .homepage-journal {

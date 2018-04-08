@@ -1,5 +1,9 @@
 .upcoming-events {
   padding-bottom: $sp_base * 4;
+  
+  h2 > a {
+    text-decoration: underline;
+  }
 }
 
 .homepage-journal {
