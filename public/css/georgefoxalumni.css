@@ -146,6 +146,9 @@ a.btn-wide {
   .image img {
     width: 100%; } }
 
+.alumni .alumni-section picture img {
+  width: 100%; }
+
 a:not(.btn) {
   text-decoration: underline; }
 
