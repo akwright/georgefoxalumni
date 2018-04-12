@@ -1,8 +1,7 @@
 body.alumni .subheader .navbar .nav {
   position: absolute;
   top: 100%;
-  right: -$sp_base * .5;
-  left: auto;
+  left: 50%;
   width: calc(100% - 134px);
   max-width: 306px;
   min-width: 250px;
@@ -10,6 +9,13 @@ body.alumni .subheader .navbar .nav {
   margin-right: 0;
   
   background: $c_fog;
+  transform: translateX(-50%);
+  
+  @media (min-width: 30em) {
+    left: auto;
+    right: -$sp_base * .5;
+    transform: translateX(0);
+  }
   
   @media (min-width: 48em) {
     max-width: initial;
@@ -44,8 +50,7 @@ body.alumni .subheader .navbar .nav > li {
 }
 
   body.alumni .subheader .navbar .nav>li>a {
-    margin-left: $sp_base * .4;
-    padding: $sp_base * .32 0 $sp_base * .32 $sp_base * .28;
+    padding: $sp_base * .32 0;
     
     border-bottom: 1px solid $c_white;
     color: $c_navy;
@@ -53,6 +58,11 @@ body.alumni .subheader .navbar .nav > li {
     font-family: $fontfamily_headers;
     font-weight: bold;
     text-shadow: none;
+    
+    @media (min-width: 30em) {
+      margin-left: $sp_base * .4;
+      padding: $sp_base * .32 0 $sp_base * .32 $sp_base * .28;
+    }
     
     @media (min-width: 48em) {
       margin-left: 0;
@@ -65,12 +75,15 @@ body.alumni .subheader .navbar .nav > li {
     body.alumni .subheader .navbar .nav>.active>a:hover,
     body.alumni .subheader .navbar .nav>.active>a:focus {
       margin-left: 0;
-      padding-left: $sp_base * .68;
       
       background: $c_gold;
       -webkit-box-shadow: none;
       box-shadow: none;
       color: $c_white;
+      
+      @media (min-width: 30em) {
+        padding-left: $sp_base * .68;
+      }
       
       @media (min-width: 48em) {
         padding-left: 0;
@@ -84,11 +97,15 @@ body.alumni .subheader .navbar .nav > li {
     body.alumni .subheader .navbar .nav li.dropdown.active>.dropdown-toggle,
     body.alumni .subheader .navbar .nav li.dropdown.open.active>.dropdown-toggle {
       margin-left: 0;
-      padding-left: $sp_base * .68;
+      
       
       background: $c_blue;
       border-bottom-width: 0;
       color: $c_white;
+      
+      @media (min-width: 30em) {
+        padding-left: $sp_base * .68;
+      }
       
       @media (min-width: 48em) {
         padding-left: 0;
@@ -115,6 +132,7 @@ body.alumni .subheader .navbar .nav > li {
       
       
 body.alumni .subheader .btn-navbar {
+  display: inline-block;
   margin-right: 0;
   padding: $sp_base * .25 $sp_base * .5 $sp_base * .15 $sp_base * .25;
   position: relative;
@@ -123,8 +141,14 @@ body.alumni .subheader .btn-navbar {
   border: none;
   box-shadow: none;
   color: $c_black;
+  float: none;
   font-size: 130%;
   text-shadow: none;
+  
+  @media (min-width: 30em) {
+    display: block;
+    float: right;
+  }
   
   &::after {
     content: '';
