@@ -132,7 +132,6 @@ body.alumni .subheader .navbar .nav > li {
       
       
 body.alumni .subheader .btn-navbar {
-  display: inline-block;
   margin-right: 0;
   padding: $sp_base * .25 $sp_base * .5 $sp_base * .15 $sp_base * .25;
   position: relative;
@@ -141,12 +140,15 @@ body.alumni .subheader .btn-navbar {
   border: none;
   box-shadow: none;
   color: $c_black;
-  float: none;
   font-size: 130%;
   text-shadow: none;
   
+  @media (max-width: 29.9375em) {
+    display: inline-block;
+    float: none;
+  }
+  
   @media (min-width: 30em) {
-    display: block;
     float: right;
   }
   
