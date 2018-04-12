@@ -37,10 +37,14 @@
       
       > a {
         display: block;
-        padding: $sp_base * .15 0 $sp_base * .15 $sp_base * 1.2;
+        padding: $sp_base * .15 0;
         
         color: $c_white;
         text-decoration: none;
+        
+        @media (min-width: 30em) {
+          padding: $sp_base * .15 0 $sp_base * .15 $sp_base * 1.2;
+        }
         
         @media (min-width: 48em) {
           padding: $sp_base * .3 $sp_base * .5;
