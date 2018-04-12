@@ -1,8 +1,12 @@
 body.alumni .subheader {
   padding: 0 $sp_base * .5;
   
-  background: $c_fog;
+  background: $c_gold;
   box-shadow: none;
+  
+  @media (min-width: 30em) {
+    background: $c_fog;
+  }
   
   @media (min-width: 48em) {
     padding: 0;
@@ -10,6 +14,11 @@ body.alumni .subheader {
     
   .container {
     margin-bottom: 0;
+    text-align: center;
+    
+    @media (min-width: 30em) {
+      text-align: initial;
+    }
     
     @media (max-width: 979px) and (min-width: 768px) {
       width: auto;
