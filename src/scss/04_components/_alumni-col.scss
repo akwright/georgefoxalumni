@@ -7,16 +7,11 @@
     margin-bottom: 0;
     
     display: flex !important;
-    flex-flow: row wrap;
-    justify-content: center;
-    
-    * {
-      flex-basis: 100%;
-    }
+    flex-flow: column;
     
     .btn {
       flex-basis: auto;
-      align-self: flex-end;
+      align-self: center;
     }
   }
   
@@ -67,6 +62,10 @@
     max-width: 45ch;
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  p {
+    flex: 1 0 auto;
   }
   
   .btn {
