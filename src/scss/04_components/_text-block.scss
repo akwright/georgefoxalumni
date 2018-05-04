@@ -1,9 +1,20 @@
+.text-heading {
+  h1 {
+    max-width: 667px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .text-block {
-  border-top: 1px solid $c_fog;
+  padding-top: 0;
   
   .text-content {
+    padding-top: $sp_base * 1.6;
+    
     max-width: 80ch;
     margin-left: auto;
     margin-right: auto;
+    
+    border-top: 1px solid $c_fog;
   }
 }
